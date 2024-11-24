@@ -16,32 +16,15 @@ public class IndexOf {
 
             list.add(input);
         }
-        int item = list.get(0);
-        for (Integer number : list) {
-            if (item != number) {
-                item++;
+
+        System.out.println("Search for? ");
+        int searchNumber = Integer.valueOf(scanner.nextLine());
+
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) == searchNumber) {
+                System.out.println(searchNumber + " is at index " + i);
             }
-            if (item == number) {
-                System.out.println(number + " is at index " + item);
-            }
+
         }
-
-        System.out.println("");
-
-        // implement here finding the indices of a number
-    
-            System.out.print("Search for? ");
-            int findNumber = Integer.valueOf(scanner.nextLine());
-            for (int index = 0; index < list.size(); index++) {
-                int number = list.get(index);
-                if (number == findNumber) {
-                    System.out.println(findNumber + " is at index " + number);
-                }
-                
-            }
-
-
-
-
     }
 }
