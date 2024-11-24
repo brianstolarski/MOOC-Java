@@ -22,12 +22,26 @@ public class IndexOf {
                 item++;
             }
             if (item == number) {
-                System.out.println(number + "is at index" + item);
+                System.out.println(number + " is at index " + item);
             }
-        }   
+        }
 
         System.out.println("");
 
         // implement here finding the indices of a number
+    
+            System.out.print("Search for? ");
+            int findNumber = Integer.valueOf(scanner.nextLine());
+            for (int index = 0; index < list.size(); index++) {
+                int number = list.get(index);
+                if (number == findNumber) {
+                    System.out.println(findNumber + " is at index " + number);
+                }
+                
+            }
+
+
+
+
     }
 }
