@@ -16,6 +16,15 @@ public class IndexOf {
 
             list.add(input);
         }
+        int item = list.get(0);
+        for (Integer number : list) {
+            if (item != number) {
+                item++;
+            }
+            if (item == number) {
+                System.out.println(number + "is at index" + item);
+            }
+        }   
 
         System.out.println("");
 
