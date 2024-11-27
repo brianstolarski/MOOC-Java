@@ -1,5 +1,4 @@
 
-
 import java.util.Scanner;
 
 public class IndexWasNotFound {
@@ -20,6 +19,18 @@ public class IndexWasNotFound {
         int searching = Integer.valueOf(scanner.nextLine());
 
         // Implement the search functionality here
+        boolean found = false;
+        int index = 0;
+        while (index < array.length) {
+            if (searching == array[index]) {
+                System.out.println(searching + " is at index " + index + ".");
+                found = true;
+                break;
+            }
+            index++;
+        }
+        if (!found) {
+            System.out.println(searching + " was not found.");
+        }
     }
-
 }
